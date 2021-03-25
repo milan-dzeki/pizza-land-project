@@ -1,0 +1,19 @@
+.pizza-build {
+  @media (min-width: 760px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  &__crust {
+    height: 40rem;
+    width: 40rem;
+    border: 2rem solid rgb(255, 193, 22);
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+
+    @media (min-width: 760px) {
+      margin: 0;
+    }
+  }
+}

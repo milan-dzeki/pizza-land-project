@@ -1,0 +1,197 @@
+@import "../../../sassHelpers/mixins";
+
+.employees {
+  &__title {
+    @include sectionTitle(rgb(189, 174, 255));
+  }
+
+  &__content {
+    padding: 3rem 2rem;
+    background-color: rgb(226, 226, 226);
+    
+    &-info {
+      @include sectionInfo();
+    }
+  }
+
+  &__people {
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    // width: 40rem;
+    margin: 0 auto 3rem auto;
+
+    &-content {
+      @media (min-width: 700px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+
+    &--makers {
+      border: 0.2rem solid rgba(38, 0, 255, 0.15);
+      background-color: rgba(137, 43, 226, 0.082);
+
+      .employees__person {
+        &-info {
+          background-color: rgba(137, 43, 226, 0.247);
+        }
+
+        &-name {
+          color: rgb(77, 0, 150);
+          background-color: rgba(137, 43, 226, 0.295);
+        }
+
+        &-expand {
+          background-color: rgb(132, 1, 165);
+          color: white;
+        }
+      }
+    }
+
+    &--delivery {
+      border: 0.2rem solid rgba(38, 0, 255, 0.15);
+      background-color: rgba(14, 139, 212, 0.158);
+
+      .employees__person {
+        &-info {
+          background-color: rgba(43, 122, 226, 0.199);
+        }
+
+        &-name {
+          color: rgb(23, 1, 104);
+          background-color: rgba(92, 181, 253, 0.849);
+        }
+
+        &-expand {
+          background-color: rgb(57, 166, 255);
+          color: white;
+        }
+      }
+    }
+
+    &--sellers {
+      border: 0.2rem solid rgba(195, 0, 255, 0.15);
+      background-color: rgba(179, 14, 212, 0.096);
+
+      .employees__person {
+        &-info {
+          background-color: rgba(220, 43, 226, 0.123);
+        }
+
+        &-name {
+          color: rgb(87, 1, 104);
+          background-color: rgba(221, 92, 253, 0.212);
+        }
+
+        &-expand {
+          background-color: rgb(222, 57, 255);
+          color: white;
+        }
+      }
+    }
+
+    &--nutritionists {
+      border: 0.2rem solid rgba(143, 143, 143, 0.15);
+      background-color: rgba(121, 121, 121, 0.096);
+
+      .employees__people-content {
+        max-width: 80rem;
+        margin: 0 auto;
+      }
+
+      .employees__person {
+        &-info {
+          background-color: rgba(126, 126, 126, 0.212);
+        }
+
+        &-name {
+          color: rgb(51, 51, 51);
+          background-color: rgba(124, 124, 124, 0.212);
+        }
+
+        &-expand {
+          background-color: rgb(100, 100, 100);
+          color: white;
+        }
+      }
+    }
+
+    &-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__person {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 40rem;
+    margin: 0 auto;
+    transition: all 0.2s linear;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:hover &-photo img {
+      transform: scale(1.1);
+    }
+
+    @media (min-width: 700px) {
+      flex: 0 0 calc(30rem - 1rem);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &-photo {
+      height: 40rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      overflow: hidden;
+
+      img {
+        transition: transform 0.2s linear;
+      }
+
+      @media (min-width: 700px) {
+        height: 30rem;
+      }
+    }
+
+    &-info {
+      padding-bottom: 2rem;
+    }
+
+    &-name {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      padding: 1.5rem 0;
+    }
+
+    &-job, &-speciality {
+      font-size: 1.5rem;
+      padding: 0 2rem 1.5rem 2rem;
+    }
+
+    &-expand {
+      display: block;
+      width: 10rem;
+      margin: 2rem auto 0 auto;
+      font-size: 1.6rem;
+      padding: 0.6rem 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

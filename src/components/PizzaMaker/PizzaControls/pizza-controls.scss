@@ -1,0 +1,103 @@
+.pizza-controls {
+  width: 42rem;
+  margin: 3rem auto 0 auto;
+
+  // @media (min-width: 700px) {
+  //   width: 35rem;
+  // }
+
+  &__price {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: rgb(207, 135, 1);
+    border-radius: 0.5rem;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 760px) {
+      width: 100%;
+    }
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 11rem;
+    color: rgb(197, 118, 0);
+  }
+
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid orange;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    select {
+      border: none;
+      padding: 0.2rem;
+      outline: none;
+    }
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: grey !important;
+      opacity: 0.2;
+    }
+  }
+
+  .btn-remove {
+    background-color: rgb(255, 142, 138);
+  }
+
+  .btn-add {
+    background-color: orange;
+  }
+
+  // &__order-btn {
+  //   display: block;
+  //   border: none;
+  //   outline: none;
+  //   font-size: 1.8rem;
+  //   font-weight: bold;
+  //   color: white;
+  //   text-transform: uppercase;
+  //   padding: 0.8rem 1.5rem;
+  //   border-radius: 0.5rem;
+  //   background-color: peru;
+  //   margin: 2rem auto 0 auto;
+  //   cursor: pointer;
+
+  //   &:hover {
+  //     opacity: 0.8;
+  //   }
+  // }
+}

@@ -1,0 +1,32 @@
+.input-container {
+  display: block;
+  width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
+.input-label {
+  font-size: 1.7rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  display: block;
+  font: inherit;
+  font-size: 1.7rem;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.input-valid {
+  background-color: rgb(220, 246, 255);
+  border: 1px solid rgb(233, 209, 255);
+}
+
+.input-invalid {
+  background-color: rgb(255, 192, 185);
+  border: 1px solid red;
+}

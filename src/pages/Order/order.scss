@@ -1,0 +1,191 @@
+@import "../../sassHelpers/mixins";
+
+.order {
+  
+  &__title {
+    @include sectionTitle(orange);
+  }
+
+  &__content {
+    background-color: rgb(255, 231, 196);
+    padding-bottom: 3rem;
+
+    @media (min-width: 760px) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__pizza-title {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: rgb(126, 0, 0);
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  &__total-price {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: rgb(226, 95, 43);
+    border-radius: 0.5rem;
+
+    @media (min-width: 760px) {
+      max-width: 25rem;
+      margin: 2rem auto 0 auto;
+    }
+  }
+
+  &__pizza {
+    
+    &-pizza {
+      @media (min-width: 760px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__more {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: red;
+    text-align: center;
+    padding: 1rem 0;
+    width: 24rem;
+    margin: 3rem auto 2rem auto;
+    border-radius: 0.5rem;
+    
+    a {
+      color: white;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__form-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__finished {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 3rem;
+    width: 80%;
+    max-width: 50rem;
+    box-shadow: 1px 2px 5px black;
+    background-color: yellow;
+    font-size: 2rem;
+    z-index: 800;
+  }
+}
+
+.pizza-display {
+  width: 40rem;
+  margin: 0 auto 1rem auto;
+  background-color: rgb(255, 188, 62);
+  border: 0.5rem solid orange;
+  border-radius: 0.5rem;
+  padding: 2rem 0 0 0;
+  position: relative;
+
+  &__remove {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width: 760px) {
+    max-width: 35rem;
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem auto;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+    background-color: orange;
+    padding: 1rem 0;
+  }
+
+  &__ing-title {
+    text-transform: uppercase;
+    color: rgb(126, 0, 0);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1rem;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    flex: 0 0 50%;
+    border-right: 2px solid orange;
+  }
+
+  &__ingredients {
+    list-style: disc;
+    padding: 0 0 2rem 3rem;
+  }
+
+  &__ing {
+    font-size: 1.5rem;
+    color:rgb(126, 0, 0);
+    font-weight: bold;
+  }
+
+  &__pricing {
+    flex: 0 0 50%;
+    padding: 2rem;
+    label {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+  }
+
+  &__price-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  &__price-value {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+}

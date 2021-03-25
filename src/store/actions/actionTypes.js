@@ -1,0 +1,46 @@
+// navList actions
+export const SHOW_NAVLIST = "SHOW_NAVLIST";
+export const HIDE_NAVLIST = "HIDE_NAVLIST";
+
+export const NAVLIST_ITEM_CLICKED = "NAVLIST_ITEM_CLICKED";
+
+// change pizza filter type
+export const CHANGE_PIZZA_TYPE = "CHANGE_PIZZA_TYPE";
+export const SET_PIZZA_TYPE_TO_ALL = "SET_PIZZA_TYPE_TO_ALL";
+
+export const ADD_PIZZA_TO_ORDER_STORE = "ADD_PIZZA_TO_ORDER_STORE";
+export const REMOVE_PIZZA_FROM_ORDER_STORE = "REMOVE_PIZZA_FROM_ORDER_STORE";
+
+// order selected pizzas
+export const ORDER_PIZZAS_SUCCESS = "ORDER_PIZZAS_SUCCESS";
+export const ORDER_PIZZAS_SUCCESS_FINISH = "ORDER_PIZZAS_SUCCESS_FINISH";
+export const ORDER_PIZZAS_FAIL = "ORDER_PIZZAS_FAIL";
+
+// add and remove ingredients (pizza maker)
+export const ADD_INGREDIENT = "ADD_INGREDIENT";
+export const REMOVE_INGREDIENT = "REMOVE_INGREDIENT";
+
+export const MANAGE_CHEESES = "MANAGE_CHEESES";
+export const MANAGE_ADDITIONS = "MANAGE_ADDITIONS";
+
+// pizza maker order
+export const ORDER_CUSTOM_SUCCESS = "ORDER_CUSTOM_SUCCESS";
+export const ORDER_CUSTOM_FAIL = "ORDER_CUSTOM_FAIL";
+export const ORDER_CUSTOM_SUCCESS_FINISH = "ORDER_CUSTOM_SUCCESS_FINISH";
+
+// authentication
+export const AUTH_SUCCESS = "AUTH_SUCCESS";
+export const AUTH_FAIL = "AUTH_FAIL";
+export const AUTH_LOGOUT = "AUTH_LOGOUT";
+
+// fetch orders
+// 1.pizza types
+export const FETCH_PIZZA_TYPES_ORDERS_SUCCESS = "FETCH_PIZZA_TYPES_ORDERS_SUCCESS";
+export const FETCH_PIZZA_TYPES_ORDERS_FAIL = "FETCH_PIZZA_TYPES_ORDERS_FAIL";
+
+// 2.pizza maker
+export const FETCH_PIZZA_MAKER_ORDERS_SUCCESS = "FETCH_PIZZA_MAKER_ORDERS_SUCCESS";
+export const FETCH_PIZZA_MAKER_ORDERS_FAIL = "FETCH_PIZZA_MAKER_ORDERS_FAIL";
+
+// job application
+export const JOB__APPLY__SUCCESS = "JOB__APPLY__SUCCESS";

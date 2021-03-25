@@ -1,0 +1,172 @@
+@import "../../sassHelpers/mixins";
+
+.orders {
+  &__title {
+    @include sectionTitle(rgb(219, 219, 219));
+  }
+
+  &__content {
+    padding: 3rem 0;
+    &-info {
+      @include sectionInfo();
+    }
+  }
+
+  &__orders {
+    h4 {
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+      padding: 1.5rem 0;
+    }
+
+    &-pizza-types {
+      width: 90%;
+      margin: 0 auto 3rem auto;
+      max-width: 90rem;
+      border: 1px solid rgb(207, 207, 207);
+
+      h4 {
+        background-color: rgb(219, 218, 218); 
+      }
+
+      &__order {
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 0.5rem;
+        width: 90%;
+        margin: 1rem auto 1rem auto;
+        overflow: hidden;
+      }
+
+      &__text {
+        font-size: 1.8rem;
+        text-align: center;
+        background-color: rgb(226, 226, 226);
+        padding: 1rem 0;
+      }
+
+      &__pizzas {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+
+      &__address {
+        text-align: center;
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &__price {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 1.5rem 0;
+        background-color: rgb(202, 202, 202);
+      }
+
+      .single-order-pizza {
+        background-color: lightblue;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        padding-bottom: 2rem;
+        width: 30rem;
+        @media (min-width: 700px) {
+          flex: 0 0 calc(50% - 3rem);
+        }
+
+        &__name {
+          font-size: 1.7rem;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: bold;
+          margin-bottom: 2rem;
+          background-color: rgb(210, 228, 255);
+          padding: 1rem 3rem;
+        }
+
+        &__size, &__price {
+          font-size: 1.6rem;
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+      
+    }
+
+    //pizza maker orders
+    &-pizza-maker {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 90rem;
+      border: 1px solid rgb(207, 207, 207);
+
+      &__list {
+        @media (min-width: 800px) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+
+      h4 {
+        background-color: rgb(59, 59, 59);
+        color: white;
+      }
+
+      &__order {
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 0.5rem;
+        width: 90%;
+        margin: 1rem auto 1rem auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 800px) {
+          width: 35rem;
+        }
+      }
+
+      .pizza-maker__order {
+        
+        &-name {
+          text-align: center;
+          font-size: 1.8rem;
+          background-color: rgb(75, 75, 75);
+          color: white;
+          padding: 2rem 2rem;
+        }
+
+        &-ings {
+          padding: 2rem 3rem;
+          list-style: disc;
+          font-size: 1.7rem;
+          text-transform: capitalize;
+          border-bottom: 1px solid black;
+          flex: 1;
+        }
+
+        &-address {
+          text-align: center;
+          font-size: 1.7rem;
+          text-transform: capitalize;
+          padding: 1rem 0;
+        }
+
+        &-price {
+          text-align: center;
+          background-color: rgb(58, 58, 58);
+          color: white;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 2rem;
+          padding: 2rem 0;
+        }
+      }
+    }
+  }
+}

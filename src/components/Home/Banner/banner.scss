@@ -1,0 +1,118 @@
+.banner {
+  height: calc(90vh - 6rem);
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  &__content {
+    margin-top: 8rem;
+  }
+
+  &__title {
+    font-family: 'Bangers', cursive;
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+    animation: titleShow 1s 1;
+  }
+
+  &__subtitle {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 4rem;
+    color: rgb(139, 106, 33);
+    text-shadow: 1px 2px 2px black;
+
+    &--one {
+      animation: moveFromLeft 0.5s 1 1s backwards;
+    }
+
+    &--two {
+      margin-bottom: 3.5rem;
+      animation: moveFromRight 0.5s 1 1s backwards;
+    }
+  }
+
+  &__link {
+    font-size: 2.5rem;
+    background-color: rgb(139, 106, 33);
+    display: inline-block;
+    padding: 1rem 2rem 1.5rem 2rem;
+    color: rgb(255, 244, 224);
+    outline: 0.5rem solid rgb(139, 106, 33);
+    outline-offset: 0.7rem;
+    animation: linkShow 1s 1 1s backwards;
+
+    &:hover {
+      background-color: rgba(139, 105, 33, 0.733);
+      outline: 0.5rem solid rgba(139, 105, 33, 0.733);
+    }
+  }
+
+  &__border {
+    position: absolute;
+    height: 0.9rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+  }
+}
+
+@keyframes titleShow {
+  0% {
+    font-size: 4rem;
+    opacity: 0;
+    letter-spacing: 0rem;
+  }
+  100% {
+    font-size: 8rem;
+    opacity: 1;
+    letter-spacing: 1rem;
+  }
+}
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-4rem);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(1rem);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(4rem);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-1rem);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes linkShow {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

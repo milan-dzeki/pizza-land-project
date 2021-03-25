@@ -1,0 +1,53 @@
+@import "../../sassHelpers/mixins";
+
+.pizza-maker {
+  &__title {
+    @include sectionTitle(rgb(255, 161, 20));
+  }
+
+  &__content {
+    padding: 2rem;
+    background-color: rgb(253, 242, 226);
+    &-info {
+      @include sectionInfo();
+    }
+  }
+
+  &__maker {
+    @media (min-width: 760px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 85rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__form {
+    border-top: 1px solid red;
+    margin-top: 2rem;
+  }
+
+  &__form-title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__order-finished {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 3rem;
+    width: 80%;
+    max-width: 50rem;
+    box-shadow: 1px 2px 5px black;
+    background-color: yellow;
+    font-size: 2rem;
+    z-index: 800;
+  }
+}

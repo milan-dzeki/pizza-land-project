@@ -1,0 +1,14 @@
+@import "../../sassHelpers/mixins";
+
+.job {
+  &__title {
+    @include sectionTitle(rgb(110, 178, 255));
+  }
+
+  &__content {
+    padding: 3rem 4rem;
+    &-info {
+      @include sectionInfo();
+    }
+  }
+}

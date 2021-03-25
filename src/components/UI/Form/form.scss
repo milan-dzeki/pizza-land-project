@@ -1,0 +1,65 @@
+.form {
+  padding: 4rem 3rem;
+  background-color: rgb(223, 223, 223);
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+
+  &__button {
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 0.7rem 0;
+    width: 15rem;
+    margin: 2rem auto 0 auto;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.2;
+      cursor: not-allowed;
+
+      &:hover {
+        opacity: 0.2;
+      }
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.form__order {
+  background-color: orange;
+
+  .form__button {
+    background-color: orangered;
+    color: white;
+    width: 20rem;
+  }
+}
+
+.form__pizza-maker {
+  background-color: orange;
+
+  .form__button {
+    background-color: orangered;
+    color: white;
+    width: 20rem;
+  }
+}
+
+.form__job {
+  background-color: lightblue;
+
+  .form__button {
+    background-color: rgb(0, 89, 255);
+    color: white;
+    width: 20rem;
+  }
+}

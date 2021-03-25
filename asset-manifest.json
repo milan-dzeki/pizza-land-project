@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pizza-land-project/static/css/main.d7cf5ea9.chunk.css",
-    "main.js": "/pizza-land-project/static/js/main.87b3c19a.chunk.js",
-    "main.js.map": "/pizza-land-project/static/js/main.87b3c19a.chunk.js.map",
+    "main.js": "/pizza-land-project/static/js/main.78e83dd7.chunk.js",
+    "main.js.map": "/pizza-land-project/static/js/main.78e83dd7.chunk.js.map",
     "runtime-main.js": "/pizza-land-project/static/js/runtime-main.4a829b0d.js",
     "runtime-main.js.map": "/pizza-land-project/static/js/runtime-main.4a829b0d.js.map",
     "static/js/2.dbe77c8e.chunk.js": "/pizza-land-project/static/js/2.dbe77c8e.chunk.js",
@@ -92,6 +92,6 @@
     "static/js/runtime-main.4a829b0d.js",
     "static/js/2.dbe77c8e.chunk.js",
     "static/css/main.d7cf5ea9.chunk.css",
-    "static/js/main.87b3c19a.chunk.js"
+    "static/js/main.78e83dd7.chunk.js"
   ]
 }

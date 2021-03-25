@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pizza-land-project/static/css/main.d7cf5ea9.chunk.css",
+    "main.css": "/pizza-land-project/static/css/main.6e35bb6b.chunk.css",
     "main.js": "/pizza-land-project/static/js/main.9cc786f7.chunk.js",
     "main.js.map": "/pizza-land-project/static/js/main.9cc786f7.chunk.js.map",
     "runtime-main.js": "/pizza-land-project/static/js/runtime-main.d2d784f0.js",
@@ -50,7 +50,7 @@
     "static/css/7.ccd36d72.chunk.css.map": "/pizza-land-project/static/css/7.ccd36d72.chunk.css.map",
     "static/css/8.2a1879c4.chunk.css.map": "/pizza-land-project/static/css/8.2a1879c4.chunk.css.map",
     "static/css/9.aaf9b70f.chunk.css.map": "/pizza-land-project/static/css/9.aaf9b70f.chunk.css.map",
-    "static/css/main.d7cf5ea9.chunk.css.map": "/pizza-land-project/static/css/main.d7cf5ea9.chunk.css.map",
+    "static/css/main.6e35bb6b.chunk.css.map": "/pizza-land-project/static/css/main.6e35bb6b.chunk.css.map",
     "static/js/2.dbe77c8e.chunk.js.LICENSE.txt": "/pizza-land-project/static/js/2.dbe77c8e.chunk.js.LICENSE.txt",
     "static/media/ancient.e1953d8b.jpg": "/pizza-land-project/static/media/ancient.e1953d8b.jpg",
     "static/media/banner.f38bd6c2.jpg": "/pizza-land-project/static/media/banner.f38bd6c2.jpg",
@@ -91,7 +91,7 @@
   "entrypoints": [
     "static/js/runtime-main.d2d784f0.js",
     "static/js/2.dbe77c8e.chunk.js",
-    "static/css/main.d7cf5ea9.chunk.css",
+    "static/css/main.6e35bb6b.chunk.css",
     "static/js/main.9cc786f7.chunk.js"
   ]
 }

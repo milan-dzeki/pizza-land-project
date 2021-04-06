@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/pizza-land-project/static/css/main.512b0997.chunk.css",
-    "main.js": "/pizza-land-project/static/js/main.157d6c43.chunk.js",
-    "main.js.map": "/pizza-land-project/static/js/main.157d6c43.chunk.js.map",
-    "runtime-main.js": "/pizza-land-project/static/js/runtime-main.4750bd0d.js",
-    "runtime-main.js.map": "/pizza-land-project/static/js/runtime-main.4750bd0d.js.map",
+    "main.js": "/pizza-land-project/static/js/main.255cf8a7.chunk.js",
+    "main.js.map": "/pizza-land-project/static/js/main.255cf8a7.chunk.js.map",
+    "runtime-main.js": "/pizza-land-project/static/js/runtime-main.49ab3774.js",
+    "runtime-main.js.map": "/pizza-land-project/static/js/runtime-main.49ab3774.js.map",
     "static/js/2.dbe77c8e.chunk.js": "/pizza-land-project/static/js/2.dbe77c8e.chunk.js",
     "static/js/2.dbe77c8e.chunk.js.map": "/pizza-land-project/static/js/2.dbe77c8e.chunk.js.map",
     "static/css/3.657cc79c.chunk.css": "/pizza-land-project/static/css/3.657cc79c.chunk.css",
@@ -17,8 +17,8 @@
     "static/js/5.ec8bffb6.chunk.js": "/pizza-land-project/static/js/5.ec8bffb6.chunk.js",
     "static/js/5.ec8bffb6.chunk.js.map": "/pizza-land-project/static/js/5.ec8bffb6.chunk.js.map",
     "static/css/6.1ed93c07.chunk.css": "/pizza-land-project/static/css/6.1ed93c07.chunk.css",
-    "static/js/6.61a8b328.chunk.js": "/pizza-land-project/static/js/6.61a8b328.chunk.js",
-    "static/js/6.61a8b328.chunk.js.map": "/pizza-land-project/static/js/6.61a8b328.chunk.js.map",
+    "static/js/6.2a3100cc.chunk.js": "/pizza-land-project/static/js/6.2a3100cc.chunk.js",
+    "static/js/6.2a3100cc.chunk.js.map": "/pizza-land-project/static/js/6.2a3100cc.chunk.js.map",
     "static/css/7.ccd36d72.chunk.css": "/pizza-land-project/static/css/7.ccd36d72.chunk.css",
     "static/js/7.aaa173b6.chunk.js": "/pizza-land-project/static/js/7.aaa173b6.chunk.js",
     "static/js/7.aaa173b6.chunk.js.map": "/pizza-land-project/static/js/7.aaa173b6.chunk.js.map",
@@ -89,9 +89,9 @@
     "static/media/who.9993a3a3.jpg": "/pizza-land-project/static/media/who.9993a3a3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4750bd0d.js",
+    "static/js/runtime-main.49ab3774.js",
     "static/js/2.dbe77c8e.chunk.js",
     "static/css/main.512b0997.chunk.css",
-    "static/js/main.157d6c43.chunk.js"
+    "static/js/main.255cf8a7.chunk.js"
   ]
 }
